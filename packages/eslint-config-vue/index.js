@@ -74,7 +74,7 @@ export default [
           object: true,
         },
       ],
-      'no-unused-vars': ['error', { args: 'none' }],
+      'no-unused-vars': 'off', // we use @typescript-eslint/no-unused-vars
       'eqeqeq': ['error', 'smart'],
       'no-undef': 'off', // done by typescript
       '@typescript-eslint/no-explicit-any': 'warn',
