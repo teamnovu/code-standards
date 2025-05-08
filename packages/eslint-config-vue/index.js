@@ -75,9 +75,24 @@ export default [
         },
       ],
       'no-unused-vars': 'off', // we use @typescript-eslint/no-unused-vars
-      'eqeqeq': ['error', 'smart'],
       'no-undef': 'off', // done by typescript
+      'eqeqeq': ['error', 'smart'],
+
+      // typescript
+      // ********************
       '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+          args: 'all',
+          argsIgnorePattern: '^_',
+          caughtErrors: 'all',
+          caughtErrorsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          ignoreRestSiblings: true,
+        },
+      ],
 
       // tailwind
       // ********************
@@ -138,7 +153,6 @@ export default [
           objects: 'always-multiline',
           imports: 'always-multiline',
           exports: 'always-multiline',
-          generics: 'always-multiline',
         },
       ],
       'vue/first-attribute-linebreak': [
@@ -146,18 +160,6 @@ export default [
         {
           singleline: 'beside',
           multiline: 'below',
-        },
-      ],
-      '@typescript-eslint/no-unused-vars': [
-        'error',
-        {
-          args: 'all',
-          argsIgnorePattern: '^_',
-          caughtErrors: 'all',
-          caughtErrorsIgnorePattern: '^_',
-          destructuredArrayIgnorePattern: '^_',
-          varsIgnorePattern: '^_',
-          ignoreRestSiblings: true,
         },
       ],
     },
