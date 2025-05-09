@@ -4,6 +4,9 @@
   "description": "@teamnovus coding guidelines",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": ">= 20"
+  },
   "peerDependencies": {
     "eslint": ">= 9"
   },
