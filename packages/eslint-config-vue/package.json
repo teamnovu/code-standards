@@ -1,6 +1,6 @@
 {
   "name": "@teamnovu/eslint-config-vue",
-  "version": "9.0.13",
+  "version": "9.0.14",
   "description": "@teamnovus coding guidelines",
   "main": "index.js",
   "type": "module",
@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^2.8.0",
-    "eslint-plugin-readable-tailwind": "^1.8.0",
+    "eslint-plugin-readable-tailwind": "^2.1.1",
+    "eslint-plugin-tailwindcss": "^3.17.5",
     "eslint-plugin-vue": "^9.28.0",
-    "eslint-plugin-vuejs-accessibility": "^2.4.1",
-    "eslint-plugin-tailwindcss": "^3.17.5"
+    "eslint-plugin-vuejs-accessibility": "^2.4.1"
   },
   "repository": {
     "type": "git",
