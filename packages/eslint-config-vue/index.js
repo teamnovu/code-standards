@@ -1,6 +1,6 @@
 import js from '@eslint/js'
 import pluginStylistic from '@stylistic/eslint-plugin'
-import pluginTailwind from 'eslint-plugin-readable-tailwind'
+import pluginBetterTailwindcss from "eslint-plugin-better-tailwindcss";
 import tailwind from 'eslint-plugin-tailwindcss'
 import pluginVue from 'eslint-plugin-vue'
 import pluginVueA11y from 'eslint-plugin-vuejs-accessibility'
@@ -13,11 +13,11 @@ export default [
   pluginStylistic.configs['recommended-flat'],
 
   {
-    plugins: { 'readable-tailwind': pluginTailwind },
+    plugins: { 'better-tailwindcss': pluginBetterTailwindcss },
     rules: {
-      ...pluginTailwind.configs.warning.rules,
-      ...pluginTailwind.configs.error.rules,
-      'readable-tailwind/multiline': [
+      ...pluginBetterTailwindcss.configs["recommended-warn"].rules,
+      ...pluginBetterTailwindcss.configs["recommended-error"].rules,
+      'better-tailwindcss/multiline': [
         'warn',
         {
           group: 'newLine',
